@@ -11,8 +11,8 @@ describe('Pokedex', function() {
     cy.contains('Pokémon and Pokémon character names are trademarks of Nintendo.')
   })
 
-  it('Navigate to pokemon page from homepage', function() {
-    cy.visit('http://localhost:5000/pokemon/ivysaur')
-    cy.contains('chlorophyll')
-  })
+  // it('Navigate to pokemon page from homepage', function() {
+  //   cy.visit('http://localhost:5000/pokemon/ivysaur')
+  //   cy.contains('chlorophyll')
+  // })
 })
