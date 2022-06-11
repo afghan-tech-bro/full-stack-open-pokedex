@@ -39,3 +39,4 @@ jobs:
           healthcheck: "https://full-stack-open-pokedex-omid.herokuapp.com/health"
           checkstring: "ok"
           rollbackonhealthcheckfailed: true
+          
