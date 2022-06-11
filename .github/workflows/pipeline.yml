@@ -33,3 +33,5 @@ jobs:
           heroku_app_name: "full-stack-open-pokedex-omid"
           heroku_email: "omid.345@gmail.com"
           healthcheck: "https://full-stack-open-pokedex-omid.herokuapp.com/health"
+          checkstring: "ok"
+          rollbackonhealthcheckfailed: true
