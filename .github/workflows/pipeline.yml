@@ -4,13 +4,10 @@ on:
   push:
     branches:
       - master
-  pull_request:
-  branches: [master]
-  types: [opened, synchronize]
 
 jobs:
   simple_deployment_pipeline:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
@@ -36,5 +33,3 @@ jobs:
           heroku_app_name: "full-stack-open-pokedex-omid"
           heroku_email: "omid.345@gmail.com"
           healthcheck: "https://full-stack-open-pokedex-omid.herokuapp.com/health"
-          checkstring: "ok"
-          rollbackonhealthcheckfailed: true
